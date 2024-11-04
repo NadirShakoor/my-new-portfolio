@@ -1,0 +1,271 @@
+
+/* text design */
+h2 {
+    text-shadow: 
+        2px 2px 0 rgba(255, 0, 0, 0.8),  /* Red shadow */
+        4px 4px 0 rgba(0, 255, 0, 0.8),  /* Green shadow */
+        6px 6px 0 rgba(0, 0, 255, 0.8);  /* Blue shadow */
+    transition: transform 0.2s ease; /* Transition effect */
+}
+
+h2:hover {
+    transform: rotate(5deg); /* Rotate on hover */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #1a1a2e); /* Dark Blue Gradient */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #ffd700 !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #ffd700;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+/* profile img  */
+ 
+/* Centered profile section styling */
+ .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile image styling with animated border */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Outer container for the glowing border */
+.border-glow {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -150px; /* Adjust to align with image */
+    animation: glow-sequence 4s linear infinite;
+}
+
+/* Border effect around the image */
+.border-glow::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    animation: glow-sequence 4s linear infinite;
+    box-sizing: border-box;
+}
+
+/* Glowing effect sequence around the border */
+@keyframes glow-sequence {
+    0%, 25% {
+        border-top-color: #4CAF50; /* Green glow */
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    25%, 50% {
+        border-top-color: transparent;
+        border-right-color: #FF5722; /* Orange glow */
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%, 75% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #2196F3; /* Blue glow */
+        border-left-color: transparent;
+    }
+    75%, 100% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #FFEB3B; /* Yellow glow */
+    }
+}
+
+
+/* Button Animation */
+.btn-animated {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.btn-animated:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
+/* 3D Card Effect */
+.card-3d {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-content {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-content {
+    transform: rotateY(20deg) rotateX(15deg);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 30px;
+    color: #fff;
+}
+
+/* Contact Form Styling / */
+.contact-form .form-control {
+    background: rgba(219, 214, 214, 0.1);
+    border: 1px solid #ffd700;
+    color: #fff;
+}
+
+.contact-form .form-control:focus {
+    background: rgba(239, 233, 233, 0.2);
+    color: #ffd700;
+}
+
+ /* Footer */
+
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.section-title{
+    color: #ffd700; 
+}
+
+
+/* Contact Us Button Styling */
+.contact-btn {
+    background-color: #5d9cec;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #4b87db;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(75, 135, 219, 0.2);
+  }
+  /* Modal Styling */
+  
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .btn-22{
+    background-color: #ffd700; 
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+
+  .btn-22:hover{
+    color: white;
+    background-color: #ffd700; 
+    font-weight: bold;
+    border: none;
+  }
+

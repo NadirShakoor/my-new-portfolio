@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadir's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="my portfolio.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Nadir Shakoor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </div>
+          <a class="btn btn-primary btn-22" href="my CV.pdf">Download CV</a> 
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile">
+      <div class="border-glow mt-4">
+          <img src="cpoy2.png" alt="Profile Image" />
+      </div>
+      <h1 class="fs-1 mt-4 fw-bold">Nadir Shakoor</h1>
+      <p class="fw-bold">Web Developer | Designer | Backend Developer</p>
+  </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-heading fw-bold">About Me</h2>
+      <div class="container">
+        <p class="fs-4 fw-bold">
+          As a graduate industrial engineer with a passion for optimizing
+          systems and processes, I have transitioned into the dynamic field of
+          web development. My background in industrial engineering provides a
+          strong foundation in problem-solving, analytical thinking, and a
+          systematic approach to design and development.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="section">
+  <h2 class="section-heading fw-bold">My Work</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card-3d" data-bs-toggle="modal" data-bs-target="#modalWebDev">
+          <div class="card-content">
+            <i class="fas fa-code fa-3x"></i>
+            <h3>Web Development</h3>
+            <p>Creating responsive and dynamic websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-3d" data-bs-toggle="modal" data-bs-target="#modalDesign">
+          <div class="card-content">
+            <i class="fas fa-paint-brush fa-3x"></i>
+            <h3>UI/UX Design</h3>
+            <p>Designing user-friendly interfaces.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-3d" data-bs-toggle="modal" data-bs-target="#modalResponsive">
+          <div class="card-content">
+            <i class="fas fa-mobile-alt fa-3x"></i>
+            <h3>Responsive Design</h3>
+            <p>Optimizing websites for mobile and tablets.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-3d" data-bs-toggle="modal" data-bs-target="#modalBackend">
+          <div class="card-content">
+            <i class="fas fa-server fa-3x"></i>
+            <h3>Backend Development</h3>
+            <p>Building server-side functionality and databases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals for Portfolio Cards -->
+<div class="modal fade" id="modalWebDev" tabindex="-1" aria-labelledby="modalWebDevLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalWebDevLabel">Web Development</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Creating websites that are fully functional, responsive, and visually engaging. Skilled in various web technologies including HTML, CSS, JavaScript, and frameworks like Bootstrap.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDesign" tabindex="-1" aria-labelledby="modalDesignLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDesignLabel">UI/UX Design</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Designing interfaces that provide a seamless user experience. Focused on usability and aesthetic appeal, ensuring that each design meets user needs and business goals.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalResponsive" tabindex="-1" aria-labelledby="modalResponsiveLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalResponsiveLabel">Responsive Design</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Ensuring that websites are fully responsive and look great on all devices. Adapting layouts and content to provide the best user experience across different screen sizes.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBackend" tabindex="-1" aria-labelledby="modalBackendLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBackendLabel">Backend Development</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Developing robust server-side logic and database management. Skilled in backend technologies including Node.js, MySQL, and Flask to build efficient and scalable web applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <!-- my project -->
+     <section id="my-projects">
+      <h2 class="section-heading fw-bold text-center">My Project</h2>
+      <div class="container d-flex justify-content-center">
+        
+        <div class="card w-75 w-md-50 mt-2">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-8  text-center text-md-start">
+                <div class="card-title fw-bold"><h3>Plant Palace</h3></div>  
+                <p class="card-text">
+                  Plant Palace is an online platform dedicated to plant enthusiasts. It features a wide selection of indoor and outdoor plants, succulents, and flowering shrubs. The site provides tips on plant care and decorating spaces with greenery, inspiring people to bring nature into their homes and gardens.
+                </p>
+                <a href="https://serene-khapse-fda788.netlify.app/" class="btn btn-outline-primary">View Project</a>  
+              </div>
+              <div class="col-md-4">
+                <img src="pngwing.com (13).png " class="project-image img-fluid" alt="Project Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+
+    <!-- Contact Section -->
+
+  <!-- Contact Us Button -->
+<div class="text-center mt-4">
+  <button id="contactBtn" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+</div>
+
+<!-- Contact Form Modal -->
+<div id="contactModal" class="modal fade" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h2 class="modal-title fw-bold text-center" id="contactModalLabel">Get in Touch</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="contact-form">
+          <div class="form-group mb-3">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="form-group mb-3">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" rows="4" required></textarea>
+          </div>
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+ <!-- Footer -->
+    <footer class="mt-4">
+      <div class="row">
+      <div class="col-sm-10">
+      <p class="text-center">&copy; 2024 Nadir's Portfolio</p>
+    </div>  
+    
+    <div class="col-sm-2">
+      <p class="text-start">Contact Me:0312-3511101</p>
+    </div>
+
+    </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        // Get elements
+        const contactBtn = document.getElementById('contactBtn');
+        const contactModal = document.getElementById('contactModal');
+        const closeBtn = document.querySelector('.close');
+
+           // Open modal
+        contactBtn.addEventListener('click', () => {
+        contactModal.style.display = 'flex';
+        });
+
+          // Close modal on close button click
+        closeBtn.addEventListener('click', () => {
+        contactModal.style.display = 'none';
+        });
+
+         // Close modal when clicking outside of the modal content
+        window.addEventListener('click', (event) => {
+        if (event.target === contactModal) {
+        contactModal.style.display = 'none';
+        }
+    });
+
+    </script>
+  </body>
+</html>
